@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo - Galería de Fútbol</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #1e1e1e 0%, #0a0a0a 100%);
+            padding: 40px 20px;
+            border-bottom: 3px solid #ff0000; /* Rojo pasional de fútbol */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.3em;
+            text-transform: uppercase;
+        }
+        header p {
+            color: #aaaaaa;
+            margin-top: 10px;
+        }
+        .galeria-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .foto-tarjeta {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease;
+        }
+        .foto-tarjeta:hover {
+            transform: scale(1.03);
+        }
+        .foto-tarjeta img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+        .foto-info {
+            padding: 15px;
+            background-color: #1a1a1a;
+            font-weight: bold;
+            color: #ff0000;
+        }
+        footer {
+            padding: 30px;
+            color: #555555;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Carrera en el Fútbol</h1>
+        <p>Momentos destacados en la cancha, partidos y competiciones</p>
+    </header>
+
+    <div class="galeria-container">
+        <div class="foto-tarjeta">
+            <img src="foto1.jpg" alt="Foto 1">
+            <div class="foto-info">Partido Oficial</div>
+        </div>
+        <div class="foto-tarjeta">
+            <img src="foto2.jpg" alt="Foto 2">
+            <div class="foto-info">Momento del Encuentro</div>
+        </div>
+        <div class="foto-tarjeta">
+            <img src="foto3.jpg" alt="Foto 3">
+            <div class="foto-info">Entrenamiento / Jugada</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Galería Personal de Pablo</p>
+    </footer>
+
+</body>
+</html>
